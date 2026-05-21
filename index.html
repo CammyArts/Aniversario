@@ -126,8 +126,7 @@
       position: absolute;
       inset:0;
 
-      display:block;
-      overflow: hidden
+      display:none;
 
       justify-content:center;
       align-items:center;
@@ -245,13 +244,14 @@
   </style>
 </head>
 
-<body>
-
+<body onclick="document.getElementById('meuAudio').play()">
   <!-- =======================
       HOME
   ======================= -->
 
   <div class="home" id="home">
+
+    <audio id="meuAudio" src="/msc/Miyagi - Небо (текст) - Hajime Music (youtube).mp3" autoplay></audio>
 
     <h1 class="title">Para Meu Mozão ❤</h1>
 
@@ -446,9 +446,7 @@
     ];
 
       const capazTexts = [
-
-        "Trolei moi, eu não tive criatividade pra colocar algo aqui, é só isso mesmo 😅"
-  
+        "Trolei moi tem nada ati não 🤗"
       ];
 
     function openSection(id){
